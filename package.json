@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-telegram-polling",
+  "name": "n8n-nodes-telegram-polling-v7",
   "version": "0.1.2",
   "description": "n8n-node-trigger for telegram based on polling api",
   "keywords": [
