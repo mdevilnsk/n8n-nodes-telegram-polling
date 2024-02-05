@@ -114,6 +114,16 @@ export class TelegramPollingTrigger implements INodeType {
 						description:
 							'Trigger on the user chat member status was updated in a chat. The bot must be an administrator in the chat and must explicitly specify “chat_member” in the list of allowed_updates to receive these updates.',
 					},
+					{
+						name: 'Message reaction',
+						value: 'message_reaction',
+						description: 'Optional. A reaction to a message was changed by a user. The bot must be an administrator in the chat and must explicitly specify "message_reaction" in the list of allowed_updates to receive these updates. The update is not received for reactions set by bots.',
+					},
+					{
+						name: 'Message reaction count',
+						value: 'message_reaction_count',
+						description: 'Optional. Reactions to a message with anonymous reactions were changed. The bot must be an administrator in the chat and must explicitly specify "message_reaction_count" in the list of allowed_updates to receive these updates. The updates are grouped and can be sent with delay up to a few minutes.',
+					},
 				],
 				required: true,
 				default: [],
